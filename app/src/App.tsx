@@ -70,16 +70,6 @@ const App = () => {
       });
   }, []);
 
-  const setRegionsData = (countries: TypeCountry[]): string[] => {
-    let arr: string[] = [];
-    countries.map((country) => {
-      if (!arr.includes(country.region)) {
-        arr.push(country.region);
-      }
-    });
-    return arr;
-  };
-
   const createList = (data: TypeCountry[]): ReactNode => {
     if (data.length > 0) {
       return (
@@ -109,9 +99,6 @@ const App = () => {
                         <p className="bg-green-50 p-1 rounded">
                           Area: {country.area}
                         </p>
-                        {/* <p>
-                      {country.independent ? "Independent" : "Non Independent"}
-                    </p> */}
                       </div>
                     </div>
                   </div>

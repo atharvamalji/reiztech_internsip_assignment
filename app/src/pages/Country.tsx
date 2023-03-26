@@ -77,15 +77,15 @@ const Country = () => {
                     </p>
                   </div>
                   <div className="p-4 space-y-2 md:space-y-4 font-playfair">
-                    <p className="font-bold text-green-900">
+                    <p className="font-bold text-green-900 md:text-2xl">
                       {country.independent ? "Independent" : "Non Independent"}{" "}
                       Country
                     </p>
                   </div>
                   <div>
                     <div className="p-4 space-y-2">
-                      <p>Languages spoken</p>
-                      <div className="flex space-x-2 font-playfair font-extrabold text-green-900 drop-shadow">
+                      <p className="md:text-xl">Languages spoken</p>
+                      <div className="flex space-x-2 md:text-2xl font-playfair font-extrabold text-green-900 drop-shadow">
                         {Object.values(country.languages).map(
                           (language, index) => {
                             return <p>{language}</p>;
@@ -94,22 +94,22 @@ const Country = () => {
                       </div>
                     </div>
                     <div className="p-4 space-y-2">
-                      <p>Borders</p>
-                      <div className="flex space-x-2 font-playfair font-extrabold text-green-900 drop-shadow">
+                      <p className="md:text-xl">Borders</p>
+                      <div className="flex space-x-2 md:text-2xl font-playfair font-extrabold text-green-900 drop-shadow">
                         {country.borders.map((country, index) => {
                           return <p>{country}</p>;
                         })}
                       </div>
                     </div>
                     <div className="p-4 space-y-2">
-                      <p>Population</p>
-                      <div className="flex space-x-2 font-playfair font-extrabold text-green-900 drop-shadow">
+                      <p className="md:text-xl">Population</p>
+                      <div className="flex space-x-2 md:text-2xl font-playfair font-extrabold text-green-900 drop-shadow">
                         <p>{country.population}</p>
                       </div>
                     </div>
                     <div className="p-4 space-y-2">
-                      <p>Continents</p>
-                      <div className="flex space-x-2 font-playfair font-extrabold text-green-900 drop-shadow">
+                      <p className="md:text-xl">Continents</p>
+                      <div className="flex space-x-2 md:text-2xl font-playfair font-extrabold text-green-900 drop-shadow">
                         {country.continents.map((continents, index) => {
                           return <p>{continents}</p>;
                         })}
