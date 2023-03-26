@@ -2,7 +2,7 @@ import "./index.css";
 import "./global.css";
 
 import Header from "./components/Header";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 
 import { Link } from "react-router-dom";
 import { useState, useEffect, ReactNode, useRef } from "react";
