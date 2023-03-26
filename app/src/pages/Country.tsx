@@ -4,6 +4,7 @@ import Footer from "../components/footer";
 import { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import { TypeCountry } from "../types/TypeCountry";
+
 import axios from "axios";
 
 const Country = () => {
