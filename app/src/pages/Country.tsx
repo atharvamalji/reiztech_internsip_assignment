@@ -56,7 +56,12 @@ const Country = () => {
                       Find all the details about {country.name.common}. it's
                       languages, currency, population and much more.
                     </p>
-                    <button className="font-playfair font-bold text-white p-2 px-4 md:p-4 md:px-8 bg-green-900" onClick={() => {scrollToContent()}}>
+                    <button
+                      className="font-playfair font-bold text-white p-2 px-4 md:p-4 md:px-8 bg-green-900"
+                      onClick={() => {
+                        scrollToContent();
+                      }}
+                    >
                       See More
                     </button>
                   </div>

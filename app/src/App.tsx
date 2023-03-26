@@ -2,7 +2,7 @@ import "./index.css";
 import "./global.css";
 
 import Header from "./components/Header";
-import Filter from "./components/Filter";
+import Footer from "./components/footer";
 
 import { Link } from "react-router-dom";
 import { useState, useEffect, ReactNode, useRef } from "react";
@@ -539,6 +539,7 @@ const App = () => {
           </div>
         </div>
       </section>
+      <Footer />
       <motion.div
         className="justify-center items-center fixed top-0 left-0 h-screen w-full bg-[#00000080] z-50"
         initial={isFilter ? { display: "none" } : { display: "flex" }}
