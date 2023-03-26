@@ -76,12 +76,9 @@ const App = () => {
         <div className="space-y-2">
           {data.map((country, index) => {
             return (
-              <div>
+              <div key={index}>
                 <Link to={`/country/${country.alpha2Code.toLowerCase()}`}>
-                  <div
-                    key={index}
-                    className="flex bg-green-100 shasow-green-300 shadow-sm border border-green-600 rounded overflow-hidden"
-                  >
+                  <div className="flex bg-green-100 shasow-green-300 shadow-sm border border-green-600 rounded overflow-hidden">
                     <div className="flex items-center p-2 md:p-4 bg-white border-r border-green-900">
                       <span>
                         <img

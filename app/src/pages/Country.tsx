@@ -88,7 +88,7 @@ const Country = () => {
                       <div className="flex space-x-2 md:text-2xl font-playfair font-extrabold text-green-900 drop-shadow">
                         {Object.values(country.languages).map(
                           (language, index) => {
-                            return <p>{language}</p>;
+                            return <p key={`lang-${index}`}>{language}</p>;
                           }
                         )}
                       </div>
@@ -97,7 +97,7 @@ const Country = () => {
                       <p className="md:text-xl">Borders</p>
                       <div className="flex space-x-2 md:text-2xl font-playfair font-extrabold text-green-900 drop-shadow">
                         {country.borders.map((country, index) => {
-                          return <p>{country}</p>;
+                          return <p key={`borders-${index}`}>{country}</p>;
                         })}
                       </div>
                     </div>
@@ -111,7 +111,7 @@ const Country = () => {
                       <p className="md:text-xl">Continents</p>
                       <div className="flex space-x-2 md:text-2xl font-playfair font-extrabold text-green-900 drop-shadow">
                         {country.continents.map((continents, index) => {
-                          return <p>{continents}</p>;
+                          return <p key={`continent-${index}`}>{continents}</p>;
                         })}
                       </div>
                     </div>
